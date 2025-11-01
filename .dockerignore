@@ -1,0 +1,40 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Raw data (not needed for deployment)
+data/raw/
+data/thresholds/
+
+# Notebooks
+notebooks/
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large training files (only need final model)
+runs/lstm_flood_prediction/model_epoch*.pt
+!runs/lstm_flood_prediction/best_model.pt
